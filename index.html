@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Velocity i2 | Embedded IoT Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velocity i2 | Smart IoT Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f5f7fa;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background-color: #101F3C;
+      color: white;
     }
     header {
-      background: #004d99;
-      color: white;
-      padding: 1.5rem;
+      padding: 20px;
       text-align: center;
+      background-color: #0C1731;
     }
     header img {
-      max-height: 80px;
-      margin-bottom: 0.5rem;
+      max-height: 60px;
     }
-    h1 {
-      margin: 0.5rem 0;
-      font-size: 2rem;
-    }
-    p.tagline {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
-    }
-    section.products {
-      padding: 2rem;
+    .hero {
+      padding: 30px 20px;
       text-align: center;
     }
-    section.products h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #004d99;
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .product-grid {
+    .products {
       display: grid;
-      gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      max-width: 1000px;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
       margin: auto;
     }
-    .product {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-    .product:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #eee;
+    .product-card {
+      background: #1A2A4F;
+      padding: 15px;
+      border-radius: 10px;
       text-align: center;
-      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
       font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
@@ -69,34 +66,34 @@
 
   <header>
     <img src="logo.png" alt="Velocity i2 Logo">
-    <h1>Velocity i2</h1>
-    <p class="tagline">One-stop solution for embedded IoT product development, firmware & hardware design,<br>and 24-hour PCB design services.</p>
   </header>
 
+  <section class="hero">
+    <p>Velocity i2 is your one-stop solution for embedded IoT product development, firmware development, hardware designing, and 24-hour PCB design services.</p>
+  </section>
+
   <section class="products">
-    <h2>Our Product Range</h2>
-    <div class="product-grid">
-      <div class="product">
-        <h3>Wi-Fi Timer</h3>
-        <p>(Without Internet)</p>
-      </div>
-      <div class="product">
-        <h3>IoT Smart Timer</h3>
-      </div>
-      <div class="product">
-        <h3>IoT Temperature Data Logger</h3>
-        <p>(PT100)</p>
-      </div>
-      <div class="product">
-        <h3>Signage Board Animator</h3>
-        <p>Devices</p>
-      </div>
+    <div class="product-card">
+      <img src="wifi-timer.jpg" alt="Wi-Fi Timer">
+      <h3>Wi-Fi Timer (Without Internet)</h3>
+    </div>
+    <div class="product-card">
+      <img src="iot-smart-timer.jpg" alt="IoT Smart Timer">
+      <h3>IoT Smart Timer</h3>
+    </div>
+    <div class="product-card">
+      <img src="pt100-datalogger.jpg" alt="Temperature Logger">
+      <h3>IoT Temperature Data Logger (PT100)</h3>
+    </div>
+    <div class="product-card">
+      <img src="signage-animator.jpg" alt="Animator">
+      <h3>Signage Board Animator Devices</h3>
     </div>
   </section>
 
-  <footer>
+  <div class="footer">
     &copy; 2025 Velocity i2. All rights reserved.
-  </footer>
+  </div>
 
 </body>
 </html>
