@@ -1,59 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Velocity Automation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <title>Velocity i2 | Embedded IoT Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
-    .product-box {
-      padding: 16px;
-      margin: 12px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background-color: #f9f9f9;
+    header {
+      background: #004d99;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
     }
-    .product-box:hover {
-      background-color: #e0f7fa;
+    header img {
+      max-height: 80px;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+    p.tagline {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    section.products {
+      padding: 2rem;
+      text-align: center;
+    }
+    section.products h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #004d99;
+    }
+    .product-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+<body>
 
-<body class="w3-light-grey">
+  <header>
+    <img src="logo.png" alt="Velocity i2 Logo">
+    <h1>Velocity i2</h1>
+    <p class="tagline">One-stop solution for embedded IoT product development, firmware & hardware design,<br>and 24-hour PCB design services.</p>
+  </header>
 
-  <div class="w3-content w3-padding" style="max-width:800px">
-
-    <!-- Header -->
-    <header class="w3-center w3-padding-32">
-      <h1><b>Velocity Automation</b></h1>
-      <p>Smart IoT Devices for Automation</p>
-    </header>
-
-    <!-- Product List -->
-    <div class="w3-white w3-round-large w3-padding">
-      <h2 class="w3-border-bottom w3-padding-12">📦 Product List</h2>
-
-      <div class="product-box">
-        <h3>1️⃣ Wi-Fi Timer</h3>
-        <p>Smart timer device with RTC, OTA, Web UI, and multi-mode scheduling.</p>
+  <section class="products">
+    <h2>Our Product Range</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Wi-Fi Timer</h3>
+        <p>(Without Internet)</p>
       </div>
-
-      <div class="product-box">
-        <h3>💧 Wireless Water Level Controller</h3>
-        <p>Reliable pump control with transmitter/receiver units, web setup, and automation modes.</p>
+      <div class="product">
+        <h3>IoT Smart Timer</h3>
+      </div>
+      <div class="product">
+        <h3>IoT Temperature Data Logger</h3>
+        <p>(PT100)</p>
+      </div>
+      <div class="product">
+        <h3>Signage Board Animator</h3>
+        <p>Devices</p>
       </div>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-padding-24 w3-small w3-opacity">
-      <p>© 2025 Velocity Automation</p>
-    </footer>
-
-  </div>
+  <footer>
+    &copy; 2025 Velocity i2. All rights reserved.
+  </footer>
 
 </body>
 </html>
